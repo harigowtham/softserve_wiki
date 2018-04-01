@@ -1,5 +1,3 @@
-# Running Regressions on clean Centos 7 machine
-
 This note is intended to help you debug Centos regressions on a machine loaned via softserve. It's critical that you follow the instructions to the letter.
 
 ## Steps
