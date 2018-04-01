@@ -2,7 +2,7 @@
 
 This note is intended to help you debug Centos regressions on a machine loaned via softserve. It's critical that you follow the instructions to the letter.
 
-# Steps
+## Steps
 * Install Ansible. You can either use `pip install ansible` or `sudo dnf install ansible`.
 * Setup the Ansible config file in `~/.ansible.cfg` with at least the following: 
 ```
