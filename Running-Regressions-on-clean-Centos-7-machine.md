@@ -1,4 +1,7 @@
-This note is intended to help you debug Centos regressions on a machine loaned via softserve. It's critical that you follow the instructions to the letter.
+This note is intended to help you debug Centos regressions on a clean Centos 7 machine. It's critical that you follow the instructions to the letter.
+
+## Softserve machines
+**If you are working on a machine loaned from softserve, we have [specific instructions for that][softserve].**
 
 ## Steps
 * Install Ansible. You can either use `pip install ansible` or `sudo dnf install ansible`.
@@ -20,3 +23,5 @@ roles_path = ~/gluster-infra-ansible/roles
 
 * Verify that /etc/hosts has an entry that says something like this: `192.168.1.10 builder500.cloud.gluster.org`.
 * Now you can clone gluster, build it, and run regressions.
+
+[softserve]: https://github.com/gluster/softserve/wiki/Running-Regressions-on-loaned-Softserve-instances
