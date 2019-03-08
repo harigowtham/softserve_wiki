@@ -16,7 +16,7 @@ roles_path = ~/gluster-infra-ansible/roles
 * Get a machine from softserve. Let's assume that your machine has the ip `192.168.1.10`.
 * When the machine is ready, SSH into it and set the hostname manually with hostnamectl: `hostnamectl set-hostname builder500.cloud.gluster.org`
 
-* Edit the hosts file. Add `builder500.cloud.gluster.org ansible_host=192.168.1.10` under `[jenkins_builders_rax]` section.
+* Edit the hosts file. Add `builder500.cloud.gluster.org ansible_host=192.168.1.10` under `[jenkins_builders_aws]` section.
 * Then run the ansible-playbook with the following command `ansible-playbook -v -i hosts playbooks/deploy_jenkins.yml -u root -l builder500.cloud.gluster.org`
 * This job will finish after some time. At this point, you need to ssh into the machine, and reboot it `reboot`.
 * Once the machine is back online, run ansible again: `ansible-playbook -v -i hosts playbooks/deploy_jenkins.yml -u root -l builder500.cloud.gluster.org`. **DO NOT SKIP THIS STEP**
